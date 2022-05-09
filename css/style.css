@@ -77,8 +77,13 @@ ul li:nth-child(4){
 	background-color: #FF537C;
 	margin-top: -15px;
 	height: 525px;
-	padding: 200px;
 	text-align: center;
+	position: relative;
+}
+
+#descriptionPage p{
+	position: absolute;
+	top: 40%;
 }
 
 /*---Objectif---*/
@@ -175,31 +180,23 @@ ul li:nth-child(4){
 	margin: 0 auto;
 }
 
-#containerAskUs article{
-	background-color: grey;
-	width: 40%;
-	padding: 50px;
-	
-}
-
 .contentAskUs{
 	margin-top: 100px;
 	display: flex;
 	justify-content: space-around;
 }
 
-
-
-.positionLeft{
-	float: inline-start;
-	
-	
+.contentAskUs article{
+	background-color: white;
+	width: 40%;
+	padding: 40px;
+	color: black;
+	box-shadow: 10px 5px 5px black;
+	margin-bottom: 10px;
 }
 
-.positionRight{
-	float: inline-end;
-	
-}
+
+
 
 
 /*------Nos Realisation------*/
@@ -216,7 +213,6 @@ ul li:nth-child(4){
 	display: flex;
 	flex-wrap: wrap;
 	color: white;
-	
 	justify-content: center;
 }
 
@@ -314,35 +310,6 @@ footer{
 	
 }
 
-#newsletter{
-	background-color: red;
-}
-
-#newsletter form{
-	width: 50%;
-	margin: 0 auto;
-	text-align: center;
-}
-
-#newsletter input[type=text]{
-	background-color: white;
-
-	border-radius: 20%;
-	border: solid 2px white;
-	padding: 15px;
-	margin-top: 10px;
-}
-
-#newsletter input[type=submit]{
-	position: relative;
-	top: -65px;
-	left: 350px;
-	border-radius: 50%;
-	padding: 5px;
-}
-
-
-
 #footerContent{
 	display: flex;
 	justify-content: center;
@@ -364,7 +331,97 @@ footer{
 	width: 50%;
 }
 
-#footerContent div:nth-child(3){
+
+
+/*------Responsive------*/
+/*------Responsive------*/
+/*------Responsive------*/
+/*------Responsive------*/
+
+
+@media all and (max-width:  1024px){
+
+	#descriptionPage p{
+		position: absolute;
+		top: 20%;
+	}
+
+	#containerObjectif div{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 10px;
+
+	}
+
+	#ourObjectif div article{
+
+		width: 100%;
+		padding: 30px;
+		margin-top: 20px;
+	}
+
+	#containerTemoignage div{
+		display: flex;
+		flex-direction: column;
+		margin-top: 15px;
+	}
+
+
+	.contentAskUs{
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.contentAskUs article{
+		width: 100%;
+	}
+
+	.contentAskUs img{
+		display: none;
+	}
+
+	#footerContent{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#footerContent div{
+		width: 100%;
+	}
+
+	#footerContent div:nth-child(1){
+		display: flex;
+		flex-direction: row;
+		font-size: 60px;
+	}
+
+	#footerContent div:nth-child(1) i{
+		padding-left: 20px;
+		margin: 0 auto;
+	}
+
+	#footerContent div:nth-child(2) img{
+		width: 30%;
+	}
+}
+
+@media all and (max-width: 768px){
+
+	#contentRealisation{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#contentRealisation div{
+		width: 100%;
+	}
+
+	#contentRealisation div:nth-child(5){
+	width: 100%;
 	
 }
 
+}
