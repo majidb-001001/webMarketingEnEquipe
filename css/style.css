@@ -67,6 +67,233 @@ ul li:nth-child(4) {
 
 
 
+/*------Main Content------*/
+/*------Main Content------*/
+/*------Main Content------*/
+/*------Main Content------*/
+
+
+#descriptionPage{
+	background-color: #FF537C;
+	margin-top: -15px;
+	height: 525px;
+	text-align: center;
+	position: relative;
+}
+
+#descriptionPage p{
+	position: absolute;
+	top: 40%;
+}
+
+/*---Objectif---*/
+/*---Objectif---*/
+/*---Objectif---*/
+
+
+
+#ourObjectif{
+	background-color: #D9CBCB;
+}
+
+
+
+
+#containerObjectif{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+#containerObjectif div{
+	
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+#ourObjectif div article{
+	background-color: white;
+	width: 30%;
+	padding: 30px;
+}
+
+
+#ourObjectif div article img{
+	width: 20%;
+}
+
+/*---Nos temoignage---*/
+/*---Nos temoignage---*/
+/*---Nos temoignage---*/
+
+#nosTemoignage{
+	
+	background-color: white;
+	margin-top: 10px;
+}
+
+#containerTemoignage{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#containerTemoignage div{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+
+
+#nosTemoignage img{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+
+
+#nosTemoignage figcaption:hover{
+	background-color: orangered;
+}
+
+
+/*------allUcanAskUs------*/
+/*------allUcanAskUs------*/
+/*------allUcanAskUs------*/
+/*------allUcanAskUs------*/
+
+#allUcanAskUs{
+	background-color: #D9CBCB ;
+}
+
+#containerAskUs{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.contentAskUs{
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.contentAskUs article{
+	background-color: white;
+	width: 40%;
+	padding: 40px;
+	color: black;
+	box-shadow: 10px 5px 5px black;
+	margin-bottom: 10px;
+}
+
+
+
+
+
+/*------Nos Realisation------*/
+/*------Nos Realisation------*/
+/*------Nos Realisation------*/
+/*------Nos Realisation------*/
+
+#containerRealisation{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#contentRealisation{
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+	justify-content: center;
+}
+
+#contentRealisation p{
+	position: relative;
+	top: 160px;
+}
+
+#contentRealisation a{
+	text-decoration: none;
+	color: white;
+	position: relative;
+	top: 140px;
+}
+
+
+#contentRealisation div{
+	width: 25%;
+	height: 200px;
+	margin: 10px;
+	
+}
+
+#contentRealisation div:nth-child(1){
+	background-image: url(../img/realisation.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+#contentRealisation div:nth-child(2){
+	background-image: url(../img/realisation.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+#contentRealisation div:nth-child(3){
+	background-image: url(../img/realisation.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+#contentRealisation div:nth-child(4){
+	background-image: url(../img/realisation.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+#contentRealisation div:nth-child(5){
+	background-image: url(../img/realisation.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 52%;
+	
+}
+
+#contentRealisation div:nth-child(6){
+	background-image: url(../img/realisation.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+#contentRealisation div:nth-child(7){
+	background-image: url(../img/realisation.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+
+}
+
+#contentRealisation div:nth-child(8){
+	background-image: url(../img/realisation.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+
+}
+
+
+
+
 
 /*------Footer------*/
 /*------Footer------*/
@@ -76,7 +303,7 @@ ul li:nth-child(4) {
 footer {
 	display: flex;
 	justify-content: space-around;
-	background-color: red;
+	
 }
 
 footer div {
