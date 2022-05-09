@@ -3,11 +3,74 @@
     background-color: #95CB7C;
     color: White;
     text-align: center;
+    margin-top:-35px;
 }
 
 body{
     font-family: 'Lato', sans-serif;
     margin:0;
+}
+/*------Header------*/
+/*------Header------*/
+/*------Header------*/
+/*------Header------*/
+
+header{
+	position: sticky;
+	z-index: 3;
+	top: 0;
+	background-color: white;
+}
+
+#topHeaderContent{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap:  10px;
+	align-items: center;
+	
+
+}
+
+header a{
+	text-decoration: none;
+	color: black;
+}
+
+.imgLogo{
+	width: 10%;
+}
+
+
+ul{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+    margin-left:-52px;
+}
+
+ul li{
+	list-style-type: none;
+	width: 25%;
+	padding: 15px;
+}
+
+ul li:nth-child(1){
+	background-color: #FF6853;
+}
+
+ul li:nth-child(2){
+	background-color: #FF537C;
+}
+
+ul li:nth-child(3){
+	background-color: #95CB7C;
+}
+
+ul li:nth-child(4){
+	background-color: #3F50E7;
 }
 h1, h2 {
     font-size: 35px;
@@ -35,7 +98,7 @@ h1, h2 {
     font-size: 25px;
     text-align: center;
     margin-left: 630px;
-    margin-top: -114px;
+    margin-top: -111px;
 }
 
 .troisième-bulle p{
@@ -45,7 +108,7 @@ h1, h2 {
     font-size: 25px;
     text-align: center;
     margin-left: 1250px;
-    margin-top: -114px;
+    margin-top: -111px;
 }
 
 .titre1{
@@ -185,6 +248,7 @@ h1, h2 {
 .titre3{
         text-decoration: underline;
         margin-top: 200px;
+        margin-left:-50px;
 }
 
 aside {
@@ -264,4 +328,38 @@ h3{
     font-size: 40px;
     margin-top: 50px;
     text-align: center;
+}
+
+/*------Footer------*/
+/*------Footer------*/
+/*------Footer------*/
+/*------Footer------*/
+
+footer{
+	position: static;
+	bottom: 0;
+	display: inline-block;
+	justify-content: space-around;
+	
+}
+
+#footerContent{
+	display: flex;
+	justify-content: center;
+	background-color: paleturquoise;
+}
+
+#footerContent div{
+	width: 33%;
+}
+
+#footerContent div:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	font-size: 50px;
+	color: white;
+}
+
+#footerContent div:nth-child(2) img{
+	width: 50%;
 }
