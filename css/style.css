@@ -1,4 +1,4 @@
-* {
+*{
 	padding: 0;
 	margin: 0;
 }
@@ -8,34 +8,34 @@
 /*------Header------*/
 /*------Header------*/
 
-header {
+header{
 	position: sticky;
-	background-color: white;
+	z-index: 3;
 	top: 0;
-	z-index: 99;
+	background-color: white;
 }
 
-#topHeaderContent {
+#topHeaderContent{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	gap: 10px;
+	gap:  10px;
 	align-items: center;
-
+	
 
 }
 
-header a {
+header a{
 	text-decoration: none;
 	color: black;
 }
 
-.imgLogo {
+.imgLogo{
 	width: 10%;
 }
 
 
-ul {
+ul{
 	width: 100%;
 	display: flex;
 	flex-direction: row;
@@ -43,25 +43,25 @@ ul {
 	text-align: center;
 }
 
-ul li {
+ul li{
 	list-style-type: none;
 	width: 25%;
 	padding: 15px;
 }
 
-ul li:nth-child(1) {
+ul li:nth-child(1){
 	background-color: #FF6853;
 }
 
-ul li:nth-child(2) {
+ul li:nth-child(2){
 	background-color: #FF537C;
 }
 
-ul li:nth-child(3) {
+ul li:nth-child(3){
 	background-color: #95CB7C;
 }
 
-ul li:nth-child(4) {
+ul li:nth-child(4){
 	background-color: #3F50E7;
 }
 
@@ -300,254 +300,127 @@ ul li:nth-child(4) {
 /*------Footer------*/
 /*------Footer------*/
 
-footer {
-	display: flex;
+footer{
+	position: static;
+	bottom: 0;
+	display: inline-block;
 	justify-content: space-around;
 	
 }
 
-footer div {
+#footerContent{
+	display: flex;
+	justify-content: center;
+	background-color: paleturquoise;
+}
+
+#footerContent div{
+	width: 33%;
+}
+
+#footerContent div:nth-child(1){
 	display: flex;
 	flex-direction: column;
-}
-
-
-/********css Zahra***********/
-/********css Zahra***********/
-/********css Zahra***********/
-.section{
-	background-color: #3F50E7;
-	height: 525px;
-	
+	font-size: 50px;
 	color: white;
-	text-align: center;
-	padding:45px 30px 0 30px;
-	
 }
 
-.active{
-	width: 94%;
-	margin: 0 auto;
-}
-
-.active h2 {
-	padding-top: 55px;
-	box-shadow: 17px 2px 2px #3F50E7;
-	width: 23%;
-	text-align: center;
+#footerContent div:nth-child(2) img{
+	width: 50%;
 }
 
 
 
-.active h3 {
-	font-size: 17px;
-	text-align: center;
-	line-height: 1.5;
-}
+/*------Responsive------*/
+/*------Responsive------*/
+/*------Responsive------*/
+/*------Responsive------*/
 
-.titre {
-	padding-bottom: 30px;
-	margin-top: 2%;
-	text-align: center;
-}
 
-.livre {
-	text-align: center;
-}
+@media all and (max-width:  1024px){
 
-.active img {
-	max-width: 100%;
-	height: 280px;
-
-	text-align: center;
-}
-
-.active article {
-	background-color: #F1F5F8;
-	display: inline-block;
-	text-align: center;
-	width: 35em;
-	padding: 20px 20px 20px;
-	color: black;
-	margin: 11px;
-	box-shadow: 0px 0px 13px 0px #bbb;
-	/*border: 5px solid #3F50E7;*/
-	text-transform: uppercase;
-	font-style: italic;
-	border-radius: 10%;
-	margin-top: 2%;
-}
-
-.active a {
-	display: block;
-	width: 100%;
-	background-color: #3F50E7;
-	color: white;
-	margin-top: 10px;
-	padding: 10px;
-	text-decoration: none;
-	border: 2px solid;
-	border-radius: 2em;
-	top: 0;
-}
-
-img {
-	max-width: 100%;
-}
-
-.slider-container {
-	max-width: 800px;
-	position: relative;
-	margin: auto;
-	height: 350px;
-	overflow: hidden;
-	
-}
-
-.menu {
-	position: absolute;
-	left: 0;
-	z-index: 11;
-	width: 100%;
-	bottom: 0;
-	text-align: center;
-}
-
-.menu label {
-	cursor: pointer;
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	background: #ccc;
-	border-radius: 50px;
-	margin: 0 0.2em 1em;
-}
-
-.menu label:hover,
-.menu label:focus {
-	background: #3F50E7;
-}
-
-.slide-input {
-	opacity: 0;
-}
-
-.slide-img {
-	width: 100%;
-	height: 300px;
-	position: absolute;
-	top: 0;
-	left: 100%;
-	z-index: 10;
-	transition: left 0s 0.75s;
-	
-
-}
-
-[id^="slide"]:checked+.slide-img {
-	left: 0;
-	transition: left 0.65s ease-out;
-}
-
-.slide-img p {
-	position: relative;
-	top: -16rem;
-	left: 14rem;
-	font-weight: bolder;
-	font-size: 13px;
-	background: #F1F4F8;
-	border-radius: 15px;
-	margin-right: 15rem;
-	
-}
-
-.slide-img h3 {
-	position: relative;
-	top: -15rem;
-	left: -6rem;
-	font-weight: bolder;
-	font-size: x-large;
-	color: #3F50E7;
-}
-
-.slide-img h5 {
-	position: relative;
-	top: -15rem;
-	left: 14rem;
-	font-size: x-small;
-	color: #3F50E7;
-
-}
-
-/*pour mobile*/
-@media screen and (max-width: 579px){
-	.section{
-		min-width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-		height: 45%;
+	#descriptionPage p{
+		position: absolute;
+		top: 20%;
 	}
-	.active article{
-		width: 50%;
-		height: -60%;
+
+	#containerObjectif div{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 10px;
+
 	}
-	.active h2{
+
+	#ourObjectif div article{
+
+		width: 100%;
+		padding: 30px;
+		margin-top: 20px;
+	}
+
+	#containerTemoignage div{
+		display: flex;
+		flex-direction: column;
+		margin-top: 15px;
+	}
+
+
+	.contentAskUs{
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.contentAskUs article{
 		width: 100%;
 	}
-	
 
-	.slide-img h3{
-		left: 67px;
-	}
-}
-/*pour telephone*/
-
-@media (min-width: 580px) and (max-width: 768px )
-{
-	.section{
-		height: 50%;
-	}
-	.active h2{
-		width: 100%;
-	}
-	.slide-img h3{
-		left: 17px;
+	.contentAskUs img{
+		display: none;
 	}
 
-
-	
-	
-	
-}
-
-/* pour tablette*/
-
-@media(min-width: 769px) and (max-width: 1200px) {
-	.section{
-		height: 60%;
-	}
-	.active {
-		width: 100%;
-		padding-right: 10%;
-		padding-left: 10%;
-	}
-	/*img{
-		width: 80%;
-	}*/
-	.livre {
+	#footerContent{
+		display: flex;
+		flex-direction: column;
 		text-align: center;
 	}
-	.active h2{
+
+	#footerContent div{
 		width: 100%;
-		height: 5%;
-		padding-top: 0;
 	}
-	.slide-img h3{
-		
-		left: 17px;
+	
+
+	#footerContent div:nth-child(1){
+		display: flex;
+		flex-direction: row;
+		font-size: 60px;
+	}
+
+	#footerContent div:nth-child(1) i{
+		padding-left: 20px;
+		margin: 0 auto;
+	}
+
+	#footerContent div:nth-child(2) img{
+		width: 30%;
 	}
 }
 
-/*******fin css zahra**********/
-/*******fin css zahra**********/
-/*******fin css zahra**********/
+@media all and (max-width: 768px){
+
+	#contentRealisation{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#contentRealisation div{
+		width: 100%;
+	}
+
+	#contentRealisation div:nth-child(5){
+	width: 100%;
+	
+}
+
+}
