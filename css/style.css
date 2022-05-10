@@ -334,7 +334,7 @@ footer{
 .section{
 	background-color: #3F50E7;
 	height: 525px;
-	
+	margin-top: -15px;
 	color: white;
 	text-align: center;
 	padding:45px 30px 0 30px;
