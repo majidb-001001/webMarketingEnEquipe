@@ -407,9 +407,7 @@ footer{
 	top: 0;
 }
 
-img {
-	max-width: 100%;
-}
+
 
 .slider-container {
 	max-width: 800px;
@@ -563,5 +561,91 @@ img {
 	}
 }
 
+@media all and (max-width:  1024px){
+
+	#descriptionPage p{
+		position: absolute;
+		top: 20%;
+	}
+
+	#containerObjectif div{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 10px;
+
+	}
+
+	#ourObjectif div article{
+
+		width: 100%;
+		padding: 30px;
+		margin-top: 20px;
+	}
+
+	#containerTemoignage div{
+		display: flex;
+		flex-direction: column;
+		margin-top: 15px;
+	}
+
+
+	.contentAskUs{
+		display: flex;
+		flex-direction: column;
+		
+	}
+
+	.contentAskUs article{
+		width: 100%;
+	}
+
+	.contentAskUs img{
+		display: none;
+	}
+
+	#footerContent{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#footerContent div{
+		width: 100%;
+	}
+
+	#footerContent div:nth-child(1){
+		display: flex;
+		flex-direction: row;
+		font-size: 60px;
+	}
+
+	#footerContent div:nth-child(1) i{
+		padding-left: 20px;
+		margin: 0 auto;
+	}
+
+	#footerContent div:nth-child(2) img{
+		width: 30%;
+	}
+}
+
+@media all and (max-width: 768px){
+
+	#contentRealisation{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#contentRealisation div{
+		width: 100%;
+	}
+
+	#contentRealisation div:nth-child(5){
+	width: 100%;
+	
+}
+
+}
 /*******fin css zahra**********/
 /*******fin css zahra**********/
