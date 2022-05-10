@@ -17,9 +17,9 @@ body{
 
 header{
 	position: sticky;
-	z-index: 3;
-	top: 0;
-	background-color: white;
+    background-color: white;
+    top: 0;
+    z-index: 99;
 }
 
 #topHeaderContent{
@@ -43,7 +43,7 @@ header a{
 
 
 ul{
-	width: 100%;
+
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -81,35 +81,19 @@ h1, h2 {
     padding-bottom: 30px;
 }
 
-.première-bulle p{
-    height: 80px;
-    width:600px;
+#bulle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#bulle div{
+    width: 30%;
     border: solid;
-    font-size: 25px;
-    text-align: center;
-    margin-left: 10px;
     text-align: center;
 }
 
-.deuxième-bulle p{
-    height: 80px;
-    width:600px;
-    border: solid;
-    font-size: 25px;
-    text-align: center;
-    margin-left: 630px;
-    margin-top: -111px;
-}
 
-.troisième-bulle p{
-    height: 80px;
-    width:600px;
-    border: solid;
-    font-size: 25px;
-    text-align: center;
-    margin-left: 1250px;
-    margin-top: -111px;
-}
 
 .titre1{
     text-decoration: underline;
@@ -117,16 +101,11 @@ h1, h2 {
     margin-bottom: 100px;
 }
 
-.premier-carré {
-    border:solid;
-    height: 300px;
-    width:500px;
-    margin-left: 50px;
-}
+
 
 #mainElias img{
     width: 150px;
-    margin-left: 170px;
+   
 }
 #mainElias p {
     text-align: center;
@@ -139,26 +118,33 @@ h1, h2 {
     font-size: 25px;
 }
 
-.deuxième-carré{
-    border:solid;
-    height: 300px;
-    width:500px;
-    margin-left: 650px;
-    margin-top: -305px;
+#allCarre{
+    width: 90%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.troisième-carré{
-    border:solid;
-    height: 300px;
-    width:500px;
-    margin-left: 1250px;
-    margin-top: -305px;
+#allCarre div{
+    width: 30%;
+    border: solid;
+    text-align: center;
 }
+
+
 
 .titre2{
     text-decoration: underline;
     text-align: center;
     margin-top: 50px;
+}
+
+#allOnglet{
+    width: 90%;
+    margin:  0 auto;
+   
 }
 
 .premier-onglet{
@@ -167,7 +153,7 @@ h1, h2 {
     border: solid;
     font-size: 20px;
     text-align: center;
-    margin-left: 400px;
+    margin-left: 100px;
     position: block;
 }
 .bulle1{
@@ -177,7 +163,7 @@ h1, h2 {
     text-align: center;
     font-size: 90px;
     color: white;
-    margin-left: 950px;
+    margin-left: 650px;
     margin-top:-130px ;
 }
 
@@ -187,7 +173,7 @@ h1, h2 {
     border: solid;
     font-size: 20px;
     text-align: center;
-    margin-left: 1000px;
+    margin-left: 750px;
     position: block;
     margin-top: 80px;
 }
@@ -198,7 +184,7 @@ h1, h2 {
     text-align: center;
     font-size: 90px;
     color: white;
-    margin-left: 930px;
+    margin-left: 680px;
     margin-top:-130px ;
 }
 
@@ -208,20 +194,20 @@ h1, h2 {
     border: solid;
     font-size: 20px;
     text-align: center;
-    margin-left: 400px;
+    margin-left: 100px;
     position: block;
     margin-top:80px;
 }
 
 .bulle3{
-        background-color: #95CB7C;
-        height: 110px;
-        width: 130px;
-        text-align: center;
-        font-size: 90px;
-        color: white;
-        margin-left: 950px;
-        margin-top:-130px ;
+    background-color: #95CB7C;
+    height: 110px;
+    width: 130px;
+    text-align: center;
+    font-size: 90px;
+    color: white;
+    margin-left: 650px;
+    margin-top:-130px ;
 }
 .quatrième-onglet{
     height: 150px;
@@ -229,7 +215,7 @@ h1, h2 {
     border: solid;
     font-size: 20px;
     text-align: center;
-    margin-left: 1000px;
+    margin-left: 750px;
     position: block;
     margin-top: 80px;
 }
@@ -241,42 +227,38 @@ h1, h2 {
     text-align: center;
     font-size: 90px;
     color: white;
-    margin-left: 930px;
+    margin-left: 680px;
     margin-top:-130px ;
 }
 
-.titre3{
-        text-decoration: underline;
-        margin-top: 200px;
-        margin-left:-50px;
+
+#allRectangle{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
-aside {
-    margin-left:100px;
-    font-size: 19px;
-    margin-top:-100px;
-}
-.premier-rectangle img{
-                    width: 150px;
-                    padding-left: 145px;
-                    margin-top: 20px;
-}
-
-.premier-rectangle {
-    border:solid;
-    height:450px;
-    width: 450px;
-    margin-top:50px;
-
-    }
-
-.premier-rectangle p{
+#allRectangle div{
+    width: 30%;
+    border: solid;
     text-align: center;
 }
 
-.texte-titre3{
-    text-align: center;
+#allRectangle div img{
+    width: 20%;
 }
+
+
+#text3{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+
 h3{
     text-align: center;
 }
@@ -287,42 +269,7 @@ h3{
     text-align: center;
 }
 
-.deuxième-rectangle{
-    border:solid;
-    height:450px;
-    width: 450px;
-    margin-top:-455px;
-    margin-left: 550px;
 
-}
-
-.deuxième-rectangle p{
-    text-align: center;
-}
-
-.deuxième-rectangle img{
-    width: 150px;
-    padding-left: 145px;
-    margin-top: 20px;
-}
-.troisième-rectangle{
-    border:solid;
-    height:450px;
-    width: 450px;
-    margin-top:-455px;
-    margin-left: 1100px;
-    margin-bottom: 100px;
-}
-
-.troisième-rectangle p{
-    text-align: center;
-}
-
-.troisième-rectangle img{
-    width: 150px;
-    padding-left: 145px;
-    margin-top: 20px;
-}
 .couleur-Frère2{
     color: #95CB7C;
     font-size: 40px;

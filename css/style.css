@@ -299,18 +299,34 @@ ul li:nth-child(4) {
 /*------Footer------*/
 /*------Footer------*/
 /*------Footer------*/
-
-footer {
-	display: flex;
+footer{
+	position: static;
+	bottom: 0;
+	display: inline-block;
 	justify-content: space-around;
 	
 }
 
-footer div {
+#footerContent{
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
+	background-color: paleturquoise;
 }
 
+#footerContent div{
+	width: 33%;
+}
+
+#footerContent div:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	font-size: 50px;
+	color: white;
+}
+
+#footerContent div:nth-child(2) img{
+	width: 50%;
+}
 
 /********css Zahra***********/
 /********css Zahra***********/
