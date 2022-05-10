@@ -218,13 +218,8 @@ section.decouverte a {
 
 
 .nesec header {
-    padding: 0;
-}
-
-header {
-    position: relative;
-    z-index: 10;
-    padding: 20px;
+   
+    z-index: 2;
 }
 
 article {
